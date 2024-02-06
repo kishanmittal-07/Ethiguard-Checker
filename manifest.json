@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Ethiguard Checker",
+  "description": "Detect Check or uncheck checkboxes on a page",
+  "version": "0.3",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "check.png"
+  }
+}
